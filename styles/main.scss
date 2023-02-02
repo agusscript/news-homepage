@@ -14,7 +14,7 @@ $Very-dark-blue: hsl(240, 100%, 5%);
 }
 
 body {
-  margin: 2rem 8rem;
+  padding: 2rem 8rem;
   font-size: 15px;
   font-family: "Inter", sans-serif;
   background-color: $Off-white;
@@ -47,6 +47,170 @@ nav {
       a:hover {
         color: $Soft-red;
       }
+    }
+  }
+}
+
+.section-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.principal-section {
+  max-width: 746px;
+
+  img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .text-container {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      margin-top: 0.4rem;
+      color: $Very-dark-blue;
+      line-height: 3rem;
+      font-size: 2.9rem;
+      font-weight: 800;
+      width: 40%;
+    }
+
+    .wrapper {
+      width: 50%;
+
+      p {
+        color: $Dark-grayish-blue;
+        width: 96%;
+        font-size: 16px;
+        line-height: 1.28rem;
+      }
+
+      button {
+        margin-top: 2.1rem;
+        border: none;
+        width: 168px;
+        height: 40px;
+        background-color: $Soft-red;
+        color: $Off-white;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: $Very-dark-blue;
+      }
+    }
+  }
+}
+
+.second-section {
+  padding: 1.2rem 1.7rem;
+  max-width: 326px;
+  min-height: 470px;
+  background-color: $Very-dark-blue;
+
+  h2 {
+    color: $Soft-orange;
+    font-size: 2rem;
+  }
+
+  h3 {
+    width: 250px;
+    margin-top: 2rem;
+    color: $Off-white;
+  }
+
+  h3:hover {
+    cursor: pointer;
+    color: $Soft-orange;
+  }
+
+  p {
+    margin-top: 0.8rem;
+    color: $Grayish-blue;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+  }
+
+  hr {
+    border-bottom: none;
+    margin-top: 1.4rem;
+    color: rgba(255, 255, 255, 0.14);
+  }
+}
+
+.third-section {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  article {
+    display: flex;
+    gap: 1.4rem;
+    width: 400px;
+
+    img {
+      margin-top: 0.4rem;
+      width: 100px;
+      height: 120px;
+    }
+
+    h2 {
+      color: $Grayish-blue;
+      font-size: 2rem;
+    }
+
+    h4 {
+      margin-top: 0.6rem;
+      color: $Very-dark-blue;
+      font-size: 1.15rem;
+      letter-spacing: 0.01mm;
+    }
+
+    h4:hover {
+      cursor: pointer;
+      color: $Soft-red;
+    }
+
+    p {
+      color: $Dark-grayish-blue;
+      margin-top: 0.6rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  article:nth-child(1) {
+    p {
+      width: 90%;
+    }
+
+    h4 {
+      width: 180px;
+    }
+  }
+
+  article:nth-child(2) {
+    padding-left: 0.6rem;
+
+    p {
+      width: 80%;
+    }
+
+    h4 {
+      width: 220px;
+    }
+  }
+
+  article:nth-child(3) {
+    padding-left: 1.2rem;
+
+    h4 {
+      width: 210px;
     }
   }
 }
