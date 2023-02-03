@@ -26,14 +26,14 @@ Users should be able to:
 
 - Desktop view
 
-![](images/desktop-design.webp)
+![](assets/images/desktop-design.webp)
 
 
 - Mobile view
 
-![](images/mobile-design.webp)
+![](assets/images/mobile-design.webp)
 
-![](images/mobile-active-state.webp)
+![](assets/images/mobile-active-state.webp)
 
 
 ### Links
