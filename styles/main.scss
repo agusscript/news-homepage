@@ -27,6 +27,19 @@ nav {
   align-items: center;
   justify-content: space-between;
 
+  .nav-toggle-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .menu-icon,
+  .close-menu-icon {
+    display: none;
+    width: 40px;
+    height: 32px;
+  }
+
   img {
     width: 70px;
     height: 40px;
@@ -226,7 +239,7 @@ nav {
 
   .principal-section {
     max-width: 100%;
-  
+
     img {
       height: 300px;
     }
@@ -235,7 +248,7 @@ nav {
   .second-section {
     margin-top: 3rem;
     max-width: 100%;
-  
+
     h2 {
       margin-top: 0.6rem;
     }
@@ -243,26 +256,26 @@ nav {
 
   .third-section {
     flex-wrap: wrap;
-  
+
     article {
       margin-top: 0.8rem;
       width: 400px;
     }
-  
+
     article:nth-child(1) {
       p {
         width: 100%;
       }
     }
-  
+
     article:nth-child(2) {
       padding-left: 0;
-  
+
       p {
         width: 100%;
       }
     }
-  
+
     article:nth-child(3) {
       padding-left: 0;
     }
@@ -280,18 +293,60 @@ nav {
     padding: 2rem 4rem;
   }
 
-  .ul-nav {
-    display: none;
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2rem;
+      font-size: 1.2rem;
+      gap: 2rem;
+      position: fixed;
+      width: 70%;
+      height: 100vh;
+      top: 00px;
+      right: 0;
+      background-color: $Off-white;
+      right: -100%;
+      transition: all 0.5s;
+      box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.8);
+
+      li {
+        a {
+          color: $Very-dark-blue;
+        }
+      }
+    }
+
+    .ul-nav-active {
+      right: 0;
+    }
+
+    .nav-toggle-btn {
+      z-index: 1;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+
+    .occult {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
   }
 
   .principal-section {
     max-width: 100%;
-  
+
     .mobile-img {
       display: block;
     }
 
-    .desktop-img { 
+    .desktop-img {
       display: none;
     }
   }
@@ -308,10 +363,10 @@ nav {
         line-height: 2.8rem;
         font-size: 2.2rem;
       }
-  
+
       .wrapper {
         width: 100%;
-  
+
         p {
           margin-top: 1rem;
           width: 100%;
@@ -344,13 +399,13 @@ nav {
         width: 100%;
       }
     }
-  
+
     article:nth-child(2) {
       h4 {
         width: 100%;
       }
     }
-  
+
     article:nth-child(3) {
       h4 {
         width: 100%;

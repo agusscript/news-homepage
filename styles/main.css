@@ -19,6 +19,17 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+nav .nav-toggle-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+nav .menu-icon,
+nav .close-menu-icon {
+  display: none;
+  width: 40px;
+  height: 32px;
+}
 nav img {
   width: 70px;
   height: 40px;
@@ -224,8 +235,40 @@ nav ul li a:hover {
   body {
     padding: 2rem 4rem;
   }
-  .ul-nav {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    gap: 2rem;
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    top: 0px;
+    right: 0;
+    background-color: hsl(36deg, 100%, 99%);
+    right: -100%;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.8);
+  }
+  nav ul li a {
+    color: hsl(240deg, 100%, 5%);
+  }
+  nav .ul-nav-active {
+    right: 0;
+  }
+  nav .nav-toggle-btn {
+    z-index: 1;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav .occult {
     display: none;
+  }
+  nav .show {
+    display: block;
   }
   .principal-section {
     max-width: 100%;
