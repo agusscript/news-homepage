@@ -26,8 +26,10 @@ Users should be able to:
 
 - Desktop view
 
-![](assets/images/desktop-design.webp)
+![](assets/images/desktop-design.webp)   
 
+
+![](assets/images/desktop-active-state.webp)
 
 - Mobile view
 
