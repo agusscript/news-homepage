@@ -68,6 +68,7 @@ nav {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .principal-section {
@@ -127,7 +128,7 @@ nav {
 
 .second-section {
   padding: 1.2rem 1.7rem;
-  max-width: 326px;
+  max-width: 420px;
   min-height: 470px;
   background-color: $Very-dark-blue;
 
